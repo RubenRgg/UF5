@@ -1,0 +1,314 @@
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #333;
+  font-size: 1.3rem;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.header {
+  background: black;
+  color: white;
+  padding: 1rem 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  letter-spacing: 15px;
+  font-size: 1.3em;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.navigator ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigator ul li {
+  display: inline-block;
+}
+
+.navigator ul li a{
+  display: block;
+  padding: 0.3rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+}
+
+.navigator ul li a:hover {
+  background:#4a4a4a;
+}
+
+.contenedor{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+
+.mySlides img {
+  max-height: 900px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 3.6em;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: violet;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+.tree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  background-color:#eaeaea;
+
+
+  
+}
+
+#texto {
+  margin-left: 1.5em;
+  max-width: 300px;
+  align-items: center;
+}
+
+#ataque {
+  text-align: center;
+  color: rgb(5, 5, 121);
+  font-weight: bold;
+}
+
+#pymes{
+  text-align: justify;
+  padding: 0 10em;
+}
+#links {
+    color: #0b1e6d;
+
+  
+}
+
+
+.middlepart div img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+}
+
+
+.footer {
+  margin-top: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color:#eaeaea;
+}
+
+.footer span {
+  color: rgb(5, 5, 121);
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.cookie-container p{
+  margin: 24px 0;
+  line-height: 2;
+}
+
+.cookie-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.171);
+  transition: 400ms;
+}
+
+
+
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+    
+
+
+@media only screen and (max-width: 808px) {
+
+  #pymes{
+    text-align: center;
+    padding: 0 2em;
+  }
+
+  .slideshow-container{
+    margin-top: 5.9em;
+  }
+  
+  .logo-nav-container {
+    display: flex;;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .header div { 
+    text-align: center; 
+  }
+
+ .navigator {
+   width: 100%;
+   margin-top: 1rem;
+ }
+ 
+
+  .navigator ul li {
+    display: inline-block;
+  }
+
+
+  .navigator ul li a{
+    display: block;
+    padding: 0.3rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+  
+  .navigator ul li a:hover {
+    background:#4a4a4a;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .slideshow-container{
+    display: none;
+  }
+  .tree {
+    margin-top: 2.9em;
+  }
+
+  @media only screen and (max-width: 484px) {
+  .tree {
+   margin-top: 5em;
+ }
+
+@media only screen and (max-width: 394px) {
+  .tree, .footer  {
+     background-color: white;
+  }
+
+}
+
+@media only screen and (max-width: 394px) {
+  #where {
+    display: none;
+  }
+  div .map iframe {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 211px) {
+   .tree {
+     margin-top: 7em;
+   }
+
+
+}

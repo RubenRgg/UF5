@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formulario</title>
+        <link rel="stylesheet" type="text/css" href="CSS/styles2.css">
+        <style>
+        body{
+            background-image: url(IMG/background.jpg);
+        }
+</style>
+    </head>
+    <body>
+
+      <header class="header">
+        <div class="container logo-nav-container">
+          <a class="logo">Infotech</a>
+          <nav class="navigator">
+            <ul class="show">
+              <li><a href="PaginaPrincipal.html"> Inicio</a></li>
+              <li><a href="QuienesSomos.html"> Quienes somos</a></li>
+              <li><a href="form.html"> Contactanos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="main">
+        <h2>Contactanos</h2>
+        <div class="border"></div>
+        <form>
+            <div>
+                <input type="text" name="" required="required" placeholder="Nombre">
+            </div>
+            <div>
+                <input type="email" name="" required="required" placeholder="Email">
+            </div>
+            <div>
+                <input type="text" name="" required="required" placeholder="Asunto">
+            </div>
+            <div>
+                <textarea required="required" placeholder="Mensaje"></textarea>
+            </div>
+            <input type="submit" name="" value="Enviar">
+        </form>
+      </div>
+
+      <div class="cookie-container">
+        <p>Esta página web usa cookies. Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Para saber más, lea las <a href="http://www.interior.gob.es/politica-de-cookies" target="_blank">politica de cookies</a>.</p>
+        <button class="cookie-btn">De acuerdo</button>
+
+    </div>
+    <script>
+        const btn_close = document.querySelector(".cookie-btn")
+        const cont_cookies = document.querySelector('.cookie-container')
+        btn_close.addEventListener('click', () => {
+            cont_cookies.style.bottom = '-20000px'
+        })
+    </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Infotech</title>
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+
+    </head>
+    <body>
+      <header class="header">
+        <div class="container logo-nav-container">
+          <a class="logo">Infotech</a>
+          <nav class="navigator">
+            <ul class="show">
+              <li><a href="PaginaPrincipal.html"> Inicio</a></li>
+              <li><a href="QuienesSomos.html"> Quienes somos</a></li>
+              <li><a href="form.html"> Contactanos</a></li>
+            </ul>
+          </nav>
+        </div>
+        </header>
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="IMG/challenge.png" style="width:100%">
+
+        </div>
+        
+        <div class="mySlides fade">
+
+          <img src="IMG/recuperardatos.png" style="width:100%">
+
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="IMG/ciberseguridad.png" style="width:100%">
+
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+          <div class="tree">
+            <div><img src="IMG/datos.png" width="100" height="100"> <h2>Seguridad de los datos</h2><p id="texto">Te ayudamos a protegeros de los ciberataques y crear diversas capas de seguridad en los datos de tu empresa y trabajadores, podrás elegir a que carpetas, documentos o aplicaciones podrán acceder los empleados</p> </div>
+            <div><img src="IMG/nube.png" width="100" height="100"> <h2>Vuestra propia nube</h2><p id="texto">Sabemos que la nube es un lugar ideal para trabajar en equipo o pasar documentos de un equipo a otro, pero eso no hace que sea 100% seguro. Dejanos ayudaros en crearos una nube interna de la empresa donde aseguramos la seguridad y la Confidencialidad</p> </div>
+            <div><img src="IMG/server.png" width="100" height="100"><h2>Seguridad de servidores</h2><p id="texto">A la hora de configurar vuestros servidores o elegir servidores externos donde confiar vuestros datos nosotros somos la solución. Dejanos ayudaros a instalar y configurar los servidores de vuestra empresa o elegir que servidor externo será el ideal para la seguridad de tus datos</p> </div>
+          </div>
+       <h2 id="ataque">No esperes a sufrir un ataque para protegerte</h2>
+       <p id="pymes">En la actualidad, las grandes empresas y las pymes son susceptibles a sufrir ataques de hackers o ciberdelincuentes que ponen en peligro lo más valioso para una empresa, los datos. <br> Según un estudio que publicó Google, los pymes son el 99,8% del tejido empresarial y son el principal objetivo de los ciberataques en España. Según el informe, <strong>el coste medio de un ciberataque a una pyme suele rondar los 35.000€.</strong> Lo peor de estos ataques es que el 60% de las empresas que son atacadas, a los seis meses se ven obligadas a cerrar. <br> <a id="links" href="QuienesSomos.html">Contactanos y os ayudaremos a protegeros de los ciberataques</a></p>
+
+        <div class="footer">
+          <div class="leftpart">
+            <span>Te ofrecemos</span>
+            <ul class="ofrecemos">
+              <li class="lista">Garantía</li>
+              <li class="lista">Confidencialidad</li>
+              <li class="lista">Rapidez</li>
+              <li class="lista">Servicio en toda España</li>
+            </ul>
+          </div>
+          <div class="middlepart">
+            <span>Clientes que confian en nosotros</span><br>
+            <div><img src="IMG/prosegur.jpg" width="50" height="50"> </div>
+            <div><img src="IMG/schneider.png" width="50" height="50"> </div>
+            <div><img src="IMG/telefonica.png" width="50" height="50"></div>
+            
+            
+          </div>
+          <div class="map">
+            <span id="where">Donde estamos</span> <br>
+            <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.2708044249907!2d2.2224681156720436!3d41.45504149976074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bb7e0bc7cd7d%3A0x3ed473d7b0fc3665!2sCarrer%20d&#39;en%20Josep%20Maria%20Cuy%C3%A0s%20i%20Tolosa%2C%2023%2C%2008917%20Badalona%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1589940793866!5m2!1ses!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            
+            
+          </div>
+
+        </div>
+
+        <div class="cookie-container">
+          <p>Esta página web usa cookies. Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Para saber más, lea las <a href="http://www.interior.gob.es/politica-de-cookies" target="_blank">politica de cookies</a>.</p>
+          <button class="cookie-btn">De acuerdo</button>
+  
+        </div>
+        <script>
+            const btn_close = document.querySelector(".cookie-btn")
+            const cont_cookies = document.querySelector('.cookie-container')
+            btn_close.addEventListener('click', () => {
+                cont_cookies.style.bottom = '-20000px'
+            })
+        </script>      
+
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/scripts.js"></script>
+</html>

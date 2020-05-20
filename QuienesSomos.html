@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quienes somos</title>
+        <link rel="stylesheet" type="text/css" href="CSS/styles1.css">
+
+    </head>
+    <body>
+      <header class="header">
+        <div class="container logo-nav-container">
+          <a class="logo">Infotech</a>
+          <nav class="navigator">
+            <ul class="show">
+              <li><a href="PaginaPrincipal.html"> Inicio</a></li>
+              <li><a href="QuienesSomos.html"> Quienes somos</a></li>
+              <li><a href="form.html"> Contactanos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="paddingtop">
+      <div class="noticia">
+        <img class="derecha" src="IMG/infotech.png">
+        <aside>Les presentamos Infotech S.L. como una empresa dedicada al sector de la seguridad informática, en el que destaca por su actividad en la protección de las redes privadas de las empresas que solicitan nuestros servicios. </aside>
+      </div>
+
+      <div class="noticiaI">
+        <img class="izquierda" src="IMG/renombre.jpg">
+        <aside class="textoI">Es una empresa privada que desarrolla su actividad en Badalona, fundada en Abril de 2019, en el que al inicio, ya contaba con miembros de renombre experimentados en este sector. Actualmente, es la empresa número 1 en su sector en territorio regional y se espera que se inicie ya su fase de expansión a nivel nacional. </aside>
+      </div>
+
+      <div class="noticia">
+        <img class="derecha" src="IMG/protegerdatos.jpg">
+        <aside>Su actividad está basada en proteger la integridad, disponibilidad y confidencialidad de las bases de datos de los clientes, creando una barrera virtual en la red de cada empresa.</aside>
+      </div>
+
+      <div class="noticiaI">
+        <img class="izquierda" src="IMG/linea24h.jpg">
+        <aside class="textoI">Se ofrece un servicio de protección en línea las 24h los 365 días del año, donde profesionales cualificados estarán trabajando en la protección activa de los bienes más preciados de cada cliente. <br>Por lo que se les otorgará a cada cliente con 1 año de antigüedad el certificado de seguridad Infotech S.L., aumentando la confianza en sus clientes y el valor de la empresa. </aside>
+      </div>
+    </div>
+    <div class="cookie-container">
+      <p>Esta página web usa cookies. Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Para saber más, lea las <a href="http://www.interior.gob.es/politica-de-cookies" target="_blank">politica de cookies</a>.</p>
+      <button class="cookie-btn">De acuerdo</button>
+
+    </div>
+    <script>
+        const btn_close = document.querySelector(".cookie-btn")
+        const cont_cookies = document.querySelector('.cookie-container')
+        btn_close.addEventListener('click', () => {
+            cont_cookies.style.bottom = '-20000px'
+        })
+    </script>      
+
+
+
+
+      </body>
+</html>
